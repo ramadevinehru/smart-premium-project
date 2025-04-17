@@ -1,7 +1,5 @@
 import streamlit as st
-import os
 import pandas as pd
-import requests
 import joblib
 import xgboost as xgb
 import numpy as np
@@ -9,14 +7,7 @@ import numpy as np
 # Load trained XGBoost model
 model = joblib.load("./xgboost_model.pkl")
 
-file_path = "train.csv"
-if not os.path.exists(file_path):
-    url = "https://your-storage-service.com/path/to/train.csv"
-    response = requests.get(url)
-    with open(file_path, 'wb') as f:
-        f.write(response.content)
-
-train_sample = pd.read_csv(file_path, nrows=5000)
+train_sample = pd.read_csv("./train.csv", nrows=5000)
 
 if 'Policy Start Date' in train_sample.columns:
     train_sample['Policy Start Date'] = pd.to_datetime(train_sample['Policy Start Date'], errors='coerce')
