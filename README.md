@@ -32,24 +32,17 @@ Ensure you have the following installed:
 - Required Python libraries (listed in `requirements.txt`)
 
 ## Usage
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/yourusername/SmartPremium.git
-   cd SmartPremium
-   ```
-
-2. **Install Dependencies**:
+1. **Install Dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Run the Streamlit App**:
+2. **Run the Streamlit App**:
    ```bash
    streamlit run app.py
    ```
 
-4. **Interact with the Application**:
+3. **Interact with the Application**:
    - Input customer details such as age, income, health score, etc.
    - Receive real-time insurance premium predictions.
 
