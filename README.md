@@ -65,6 +65,3 @@ This project is licensed under the MIT License.
 
 Ramadevi N
 
----
-
-Feel free to customize the repository URL, author information, and other details as per your project's specifics. 
